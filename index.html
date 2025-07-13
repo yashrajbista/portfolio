@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yashraj Bista | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yash Raj Bista | Portfolio</title>
+  <!-- General Sans font -->
+  <link href="https://api.fontshare.com/v2/css?f=general-sans@400,500,600,700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --primary-color: #04463e;  /* dark teal */
+      --accent-color: #0a5c50;
+      --text-light: #f1f1f1;
+      --text-dark: #1c1c1c;
+      --bg-cream: #fdfcf8;
+    }
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -12,174 +22,260 @@
     }
 
     body {
-      font-family: 'Segoe UI', sans-serif;
-      line-height: 1.6;
-      background-color: #f7f9fc;
-      color: #333;
+      font-family: 'General Sans', sans-serif;
+      background-color: var(--primary-color);
+      color: var(--text-light);
+      transition: all 0.4s ease;
+      overflow-x: hidden;
     }
 
     header, footer {
-      background-color: #1e90ff;
-      color: white;
-      padding: 1rem;
+      background-color: #055147;
       text-align: center;
+      padding: 3rem 1rem 2rem;
+      position: relative;
     }
 
-    .section {
-      padding: 2rem;
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-weight: 400;
+      color: #cde8e3;
+    }
+
+    main {
       max-width: 900px;
       margin: auto;
+      padding: 2rem;
     }
 
-    .home, .about, .services, .projects, .contact {
-      margin-bottom: 2rem;
+    section, details {
+      background-color: #ffffff;
+      color: var(--text-dark);
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+      transition: transform 0.3s ease;
     }
 
-    .section h2 {
-      color: #1e90ff;
-      margin-bottom: 1rem;
-      font-size: 1.8rem;
+    section:hover, details:hover {
+      transform: translateY(-4px);
     }
 
-    .project {
-      background: #fff;
-      border-radius: 8px;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    summary {
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding: 1rem 1.5rem;
+      background-color: #d9f3ee;
+      color: #04463e;
+      border-radius: 12px 12px 0 0;
+      cursor: pointer;
+      transition: background 0.3s ease;
     }
 
-    .contact p a {
-      color: #1e90ff;
-      text-decoration: none;
+    details[open] summary {
+      border-bottom: 2px solid #bce1db;
     }
 
-    .contact p a:hover {
-      text-decoration: underline;
+    details > div {
+      padding: 1.2rem 1.5rem;
     }
 
     img.profile-photo {
-      max-width: 150px;
-      border-radius: 50%;
       display: block;
-      margin: 1rem auto;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 1.5rem auto;
+      object-fit: cover;
+      border: 5px solid #0c7d6d;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
+
+    ul {
+      list-style: disc inside;
+      margin-top: 1rem;
+      padding-left: 1rem;
+    }
+
+    h3 {
+      margin-top: 1.2rem;
+      font-weight: 600;
+    }
+
+    .contact a {
+      color: #04463e;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .contact a:hover {
+      color: #0c7d6d;
+    }
+
+    .resume-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #0c7d6d;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .resume-btn:hover {
+      background: #0a5c50;
+    }
+
+    footer {
+      font-size: 0.95rem;
+      margin-top: 2rem;
+      padding: 1.5rem;
+      background-color: #033b34;
+      color: #cde8e3;
+    }
+
+    #darkModeToggle {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      padding: 0.5rem 1rem;
+      border: 2px solid #cde8e3;
+      background: transparent;
+      color: #ffffff;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    #darkModeToggle:hover {
+      background: #0a5c50;
+      border-color: #0a5c50;
+    }
+
+    /* Dark mode styles */
+    body.dark {
+      background-color: #121212;
+      color: #f1f1f1;
+    }
+
+    body.dark header, body.dark footer {
+      background-color: #1f1f1f;
+      color: #ccc;
+    }
+
+    body.dark section, body.dark details {
+      background-color: #2c2c2c;
+      color: #f1f1f1;
+    }
+
+    body.dark summary {
+      background-color: #3a3a3a;
+      color: #ffffff;
+    }
+
+    body.dark .contact a {
+      color: #aadcd4;
+    }
+
+    body.dark .contact a:hover {
+      color: #78c7bb;
+    }
+
+    body.dark #darkModeToggle {
+      color: #f1f1f1;
+      border-color: #f1f1f1;
+    }
+
+    body.dark #darkModeToggle:hover {
+      background: #333;
+    }
+
   </style>
 </head>
 <body>
-  <!-- Header -->
   <header>
     <h1>Yash Raj Bista</h1>
-    <p> Oracle Database Administrator | Tech Enthusiast</p>
+    <p>Oracle Database Administrator | Tech Enthusiast</p>
+    <a href="YashRajBista_Resume.pdf" class="resume-btn" download>📄 Download Resume</a>
+    <button id="darkModeToggle">Toggle Dark Mode</button>
   </header>
 
-  <!-- Main Content -->
-  <main class="main">
+  <main>
+    <details open>
+      <summary>Welcome</summary>
+      <div>
+        <img src="1000041481.jpg" alt="Yash Raj Bista" class="profile-photo" />
+        <p>Hello! I’m Yash Raj Bista, a passionate Tech Enthusiast based in Nepal. I specialize in managing Oracle Databases and ensuring data availability and performance at scale.</p>
+      </div>
+    </details>
 
-    <!-- Home -->
-    <section class="home section" id="home">
-      <h2>Welcome</h2>
-      <img src="1000041481.jpg" alt="Yash Raj Bista" class="profile-photo">
-      <p>Hello! I’m Yash Raj Bista, a passionate Tech Enthusiast based in Nepal. I specialize in managing Oracle Databases.</p>
-    </section>
+    <details>
+      <summary>About Me</summary>
+      <div>
+        <p>I specialize in Oracle, SQL Server, and MySQL environments with a strong focus on high availability, disaster recovery, and performance tuning. I thrive on solving complex problems with smart database architecture and automation.</p>
+      </div>
+    </details>
 
-    <!-- About -->
-    <section class="about section" id="about">
-      <h2>About Me</h2>
-      <p>Skilled in database design, implementation, setting up and maintenance across various platforms including SQL Server, Oracle, and MySQL . Committed to staying updated with the latest technologies and best practices in database management. Passionate about leveraging data-driven insights to drive business success.</p>
-    </section>
+    <details>
+      <summary>Experience & Certifications</summary>
+      <div>
+        <h3>Certifications</h3>
+        <ul>
+          <li><strong>Oracle Certified Professional (1Z0-082)</strong> – 81.9%</li>
+          <li><strong>Java Package Training – Broadway Infosys</strong> (Feb–May 2021)</li>
+        </ul>
 
-    <!-- Services -->
-    <section class="services section" id="services">
-      <h2>Services</h2>
-      <ul>
-        <li>Oracle Database Configuration (19c, 12c, 11g)</li>
-        <li>Oracle Database Backup and Recovery </li>
-        <li>PL/SQL </li>
-        <li>MYSQL </li>
-      </ul>
-    </section>
+        <h3>Internships</h3>
+        <ul>
+          <li><strong>Web Developer – Corizo, Noida (Remote)</strong> (Feb–Apr 2023)</li>
+          <li><strong>Oracle DBA Intern – Octacore Solutions</strong> (Oct 2023–Feb 2024)</li>
+        </ul>
 
-    <section class="projects section" id="projects">
-  <h2>Experience & Certifications</h2>
+        <h3>Oracle DBA – World Distribution Nepal</h3>
+        <p><strong>Feb 2024 – Present</strong></p>
+        <ul>
+          <li>Clients: Nepal Telecom, Nepal Police, Himalayan Bank Ltd, DG_HUB, NITC</li>
+          <li>Maintained RAC, Data Guard, RMAN, GoldenGate, and audit policies</li>
+          <li>Led zero-downtime patching and DR testing efforts</li>
+        </ul>
 
-  <!-- Certifications -->
-  <div class="project">
-    <h3>Certifications</h3>
-    <ul>
-      <li>
-        <strong>Oracle Certified Professional (1Z0-082)</strong> – 81.9%<br />
-        Proven theoretical and practical knowledge of Oracle Database up to 19c, including SQL, database, and network administration.
-      </li>
-      <li>
-        <strong>Java Package Training (Broadway Infosys)</strong><br />
-        Feb 2021 – May 2021<br />
-        Covered Java fundamentals, syntax, OOP, and application development from beginner to advanced level.
-      </li>
-    </ul>
-  </div>
+        <h3>Ncell Infrastructure Migration</h3>
+        <p><strong>Tech Stack:</strong> Linux, PCA, OLVM, Rackware RMM</p>
+        <ul>
+          <li>Migrated 1000+ VMs with minimal downtime</li>
+          <li>Ensured validation, rollback, and best practices post-migration</li>
+        </ul>
+      </div>
+    </details>
 
-  <!-- Internships -->
-  <div class="project">
-    <h3>Internships</h3>
-    <ul>
-      <li>
-        <strong>Web Developer – Corizo, Noida (Remote)</strong><br />
-        Feb 2023 – April 2023<br />
-        Built responsive UI components using HTML, CSS, JavaScript, and React. Contributed to an eCommerce site.
-      </li>
-      <li>
-        <strong>Oracle DBA Intern – Octacore Solutions Pvt. Ltd.</strong><br />
-        Oct 2023 – Feb 2024<br />
-        Assisted in Oracle 19c setup on Linux, RMAN backup/recovery, and Data Guard configuration across DC/DR servers.
-      </li>
-    </ul>
-  </div>
-
-  <!-- Professional Experience -->
-  <div class="project">
-    <h3>Oracle DBA – World Distribution Nepal</h3>
-    <p><strong>Feb 2024 – Present</strong></p>
-    <p><strong>Clients:</strong> Nepal Telecom, Nepal Police, Himalayan Bank Ltd, DG_HUB, NITC</p>
-    <ul>
-      <li>Installed and maintained Oracle RAC clusters in DC/DR for high availability.</li>
-      <li>Implemented Data Guard and performed failover/switchover ensuring RPO/RTO compliance.</li>
-      <li>Configured Oracle TDE and managed wallet/key backups securely.</li>
-      <li>Automated RMAN backups and health checks via scripting.</li>
-      <li>Resolved performance issues using AWR, ADDM, and SQL tuning.</li>
-      <li>Set up GoldenGate replication for real-time, zero-downtime sync.</li>
-      <li>Documented SOPs and ensured audit compliance with FGA and access controls.</li>
-      <li>Provided 24x7 on-call support for critical databases.</li>
-    </ul>
-  </div>
-
-  <!-- Ncell Migration -->
-  <div class="project">
-    <h3>Client Project – Ncell Infrastructure Migration</h3>
-    <p><strong>Technologies:</strong> Linux, PCA, OLVM, Rackware RMM</p>
-    <ul>
-      <li>Migrated 1000+ VMs from VMware to Oracle PCA & OLVM using Rackware RMM.</li>
-      <li>Ensured zero data loss and minimal downtime during live migration.</li>
-      <li>Conducted validation, rollback planning, and post-migration tuning.</li>
-      <li>Aligned database configs with PCA best practices for performance and availability.</li>
-      <li>Delivered full documentation and provided on-call production support.</li>
-    </ul>
-  </div>
-</section>
-
-
-    <!-- Contact -->
-    <section class="contact section" id="contact">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:yashraj.bista@wdn.com.np">yashraj.bista@wdn.com.np</a></p>
-      <p>Location: Kathmandu, Nepal</p>
-    </section>
+    <details>
+      <summary>Contact Me</summary>
+      <div class="contact">
+        <p>Email: <a href="mailto:yashraj.bista@wdn.com.np">yashraj.bista@wdn.com.np</a></p>
+        <p>Location: Kathmandu, Nepal</p>
+      </div>
+    </details>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer">
+  <footer>
     <p>&copy; 2025 Yash Raj Bista. All rights reserved.</p>
   </footer>
+
+  <script>
+    const toggleButton = document.getElementById('darkModeToggle');
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
 </body>
 </html>
-
