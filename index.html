@@ -1,281 +1,997 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Yash Raj Bista | Portfolio</title>
-  <!-- General Sans font -->
-  <link href="https://api.fontshare.com/v2/css?f=general-sans@400,500,600,700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --primary-color: #04463e;  /* dark teal */
-      --accent-color: #0a5c50;
-      --text-light: #f1f1f1;
-      --text-dark: #1c1c1c;
-      --bg-cream: #fdfcf8;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="assets/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/newcss.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+  </head>
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+  <body oncontextmenu="return false">
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Yash Raj Bista</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="uil uil-estate nav__icon"></i>Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i>About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i>Skills
+              </a>
+            </li>
 
-    body {
-      font-family: 'General Sans', sans-serif;
-      background-color: var(--primary-color);
-      color: var(--text-light);
-      transition: all 0.4s ease;
-      overflow-x: hidden;
-    }
+             <li class="nav__item">
+              <a href="#experience" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i>Experience
+              </a>
+            </li>
 
-    header, footer {
-      background-color: #055147;
-      text-align: center;
-      padding: 3rem 1rem 2rem;
-      position: relative;
-    }
+            <li class="nav__item">
+              <a href="#qualification" class="nav__link">
+                <i class="uil uil-briefcase-alt nav__icon"></i>Qualification
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i>Projects
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i>Contact-Me
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+        <div class="nav__btns">
+          <!-- Theme change button -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
 
-    header h1 {
-      font-size: 3rem;
-      font-weight: 700;
-      color: #ffffff;
-    }
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main-->
 
-    header p {
-      margin-top: 0.5rem;
-      font-weight: 400;
-      color: #cde8e3;
-    }
+    <main class="main">
+      <!--========================= Home =====================-->
 
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-    }
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/yash-raj-bista"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-linkedin-alt home__icon"></i>
+              </a>
 
-    section, details {
-      background-color: #ffffff;
-      color: var(--text-dark);
-      border-radius: 12px;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
-      transition: transform 0.3s ease;
-    }
+              <a
+                href="https://github.com/yashrajbista"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-github-alt home__icon"></i>
+              </a>
+            </div>
+            <div class="home__img">
+              <svg
+                class="home__blob"
+                viewBox="0 0 200 187"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                      130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                      97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                      0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                      165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                      129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                     -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                  <image
+                    class="home__blob-img"
+                    x="-79"
+                    y="-46"
+                    xlink:href="assets/img/Pro.jpg"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="home__data">
+              <h1 class="home__title">Hi, I'm Yash Raj Bista</h1>
+              <h3 class="home__subtitle">
+                Data Science and Computational Intelligence Student
+              </h3>
+              <p class="home__description">
+                A Computer Engineer and an Oracle Database Administrator at
+                <strong>World Distribution Nepal </strong>, Kathmandu, Nepal.
+              </p>
+              <a href="#contact" class="button button--flex">
+                Contact me<i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </div>
 
-    section:hover, details:hover {
-      transform: translateY(-4px);
-    }
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+              <span class="home__scroll-name">Scroll down</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
 
-    summary {
-      font-size: 1.5rem;
-      font-weight: 600;
-      padding: 1rem 1.5rem;
-      background-color: #d9f3ee;
-      color: #04463e;
-      border-radius: 12px 12px 0 0;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
+      <!--======================= About========================-->
 
-    details[open] summary {
-      border-bottom: 2px solid #bce1db;
-    }
+      <section class="about section" id="about">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle">My introduction</span>
 
-    details > div {
-      padding: 1.2rem 1.5rem;
-    }
+        <div class="about__container container grid">
+          <img src="assets\img\about.jpg" alt="" class="about__img" />
 
-    img.profile-photo {
-      display: block;
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      margin: 1.5rem auto;
-      object-fit: cover;
-      border: 5px solid #0c7d6d;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
+          <div class="about__data">
+            <p class="about__description">
+              I hold a Bachelor's degree in Computer Engineering from MIT-WPU and am currently pursuing my Master's in Data Science and Computational Intelligence at Softwarica College, affiliated with Coventry University, UK. Alongside my studies, I work as an Oracle Database Administrator, applying my skills in real-world enterprise environments. I’m passionate about technology, eager to learn, and constantly seek opportunities to expand my knowledge and stay ahead in the evolving tech landscape. With a proactive mindset and a can-do attitude, I thrive in dynamic and challenging environments. I'm looking to contribute to a forward-thinking organization where I can grow professionally while adding real value.
+            </p>
 
-    ul {
-      list-style: disc inside;
-      margin-top: 1rem;
-      padding-left: 1rem;
-    }
+            <div class="about__info">
 
-    h3 {
-      margin-top: 1.2rem;
-      font-weight: 600;
-    }
 
-    .contact a {
-      color: #04463e;
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s ease;
-    }
+              <div>
+                <span class="about__info-title">04+</span>
+                <span class="about__info-name"
+                  >
+                  Projects</span
+                >
+              </div>
 
-    .contact a:hover {
-      color: #0c7d6d;
-    }
+              <div>
+                <span class="about__info-title">01+</span>
+                <span class="about__info-name">Years <br />experience</span>
+              </div>
+            </div>
 
-    .resume-btn {
-      display: inline-block;
-      margin-top: 1rem;
-      background: #0c7d6d;
-      color: white;
-      padding: 0.6rem 1.2rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background 0.3s ease;
-    }
+            <div class="about__buttons">
+              <a download="" href="assets\MyCV.pdf" class="button button--flex">
+                Download CV<i class="fas fa-download button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    .resume-btn:hover {
-      background: #0a5c50;
-    }
+      <!--===================== SKILLS =====================-->
 
-    footer {
-      font-size: 0.95rem;
-      margin-top: 2rem;
-      padding: 1.5rem;
-      background-color: #033b34;
-      color: #cde8e3;
-    }
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">My technical level</span>
 
-    #darkModeToggle {
-      position: absolute;
-      top: 1.5rem;
-      right: 1.5rem;
-      padding: 0.5rem 1rem;
-      border: 2px solid #cde8e3;
-      background: transparent;
-      color: #ffffff;
-      font-weight: 600;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
+        <div class="skills__container container grid">
+          <div>
+            <!--==================== Skill 1 =================-->
+            <div class="skills__content skills__open">
+              <div class="skills__header">
+                <i class="fas fa-pencil-ruler skills__icon"></i>
 
-    #darkModeToggle:hover {
-      background: #0a5c50;
-      border-color: #0a5c50;
-    }
+                <div>
+                  <h1 class="skills__title">Programming Languages</h1>
+                </div>
 
-    /* Dark mode styles */
-    body.dark {
-      background-color: #121212;
-      color: #f1f1f1;
-    }
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+              
 
-    body.dark header, body.dark footer {
-      background-color: #1f1f1f;
-      color: #ccc;
-    }
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">C</h3>
+                  </div>
+                  
+                </div>
+                
+                  <div class="skills__data">
+                    <div class="skills__titles">
+                      <h3 class="skills__name">C++</h3>
+                    </div>
+                    
+                  </div>
+                  <div class="skills__data">
+                    <div class="skills__titles">
+                      <h3 class="skills__name">Java</h3>
+                    </div>
+                    
+                  </div>
+                  <div class="skills__data">
+               
+                  </div>
+                  <div class="skills__data">
+                </div>
+                
+                
+              </div>
+            </div>
 
-    body.dark section, body.dark details {
-      background-color: #2c2c2c;
-      color: #f1f1f1;
-    }
+            <!--==================== Skill 2 =================-->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="fas fa-code skills__icon"></i>
 
-    body.dark summary {
-      background-color: #3a3a3a;
-      color: #ffffff;
-    }
+                <div>
+                  <h1 class="skills__title">IT Constructs</h1>
+                </div>
 
-    body.dark .contact a {
-      color: #aadcd4;
-    }
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
 
-    body.dark .contact a:hover {
-      color: #78c7bb;
-    }
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">DBMS</h3>
+                  </div>
+                  
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">DS & Algorithms</h3>
+                  </div>
+                  
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">OOP</h3>
+                  </div>
+                  
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">OS</h3>
+                  </div>
+                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
 
-    body.dark #darkModeToggle {
-      color: #f1f1f1;
-      border-color: #f1f1f1;
-    }
+          <div>
+            <!--==================== Skill 3 =================-->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="fas fa-swatchbook skills__icon"></i>
+                <div>
+                  <h1 class="skills__title">Technologies</h1>
+                </div>
 
-    body.dark #darkModeToggle:hover {
-      background: #333;
-    }
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
 
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Yash Raj Bista</h1>
-    <p>Oracle Database Administrator | Tech Enthusiast</p>
-    <a href="YashRajBista_Resume.pdf" class="resume-btn" download>📄 Download Resume</a>
-    <button id="darkModeToggle">Toggle Dark Mode</button>
-  </header>
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Git</h3>
+                  </div>
+                  
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Oracle DB 11g</h3>
+                  </div>
+                  
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Oracle DB 12c</h3>
+                  </div>
+                  
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Oracle DB 19c</h3>
+                  </div>
+                  
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">MySQL</h3>
+                  </div>
+                  
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">PL/SQL</h3>
+                  </div>
+                  
+                </div>
+                
+                <div class="skills__data">
+                 
+                  
+                </div>
+                <div class="skills__data">
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <main>
-    <details open>
-      <summary>Welcome</summary>
-      <div>
-        <img src="profile.jpg" alt="Yash Raj Bista" class="profile-photo" />
-        <p>Hello! I’m Yash Raj Bista, a passionate Tech Enthusiast based in Nepal.</p>
+
+      <!--===================== EXPERIENCE =====================--> 
+<section class="experience section" id="experience">
+  <h2 class="section__title">Experience</h2>
+  <span class="section__subtitle">Clients I've worked with</span>
+
+  <div class="skills__container container grid">
+    <div>
+
+<!--==================== Experience 1 =================-->
+<div class="skills__content skills__close">
+  <div class="skills__header">
+    <img src="assets/img/nepal_telecom_logo.jpg" alt="Nepal Telecom Logo"
+         class="skills__icon"
+         style="width: 32px; height: 32px; object-fit: contain; margin-right: 0.75rem;">
+
+    <div>
+      <h1 class="skills__title">Nepal Telecom</h1>
+    </div>
+
+    <i class="uil uil-angle-down skills__arrow"></i>
+  </div>
+
+  <div class="skills__list grid">
+    <div class="skills__data">
+      <div class="skills__titles">
+        <p class="skills__name">
+          Managed Oracle 11g and 19c RAC clustered databases, ensuring high availability and optimal performance.
+        </p>
       </div>
-    </details>
+    </div>
 
-    <details>
-      <summary>About Me</summary>
-      <div>
-        <p>I specialize in Oracle, SQL Server, and MySQL environments with a strong focus on high availability, disaster recovery, and performance tuning. I thrive on solving complex problems with smart database architecture and automation.</p>
+    <div class="skills__data">
+      <div class="skills__titles">
+        <p class="skills__name">
+          Performed RMAN backups, database switchover operations, and recovery procedures as part of the disaster recovery strategy.
+        </p>
       </div>
-    </details>
+    </div>
 
-    <details>
-      <summary>Experience & Certifications</summary>
-      <div>
-        <h3>Certifications</h3>
-        <ul>
-          <li><strong>Oracle Certified Professional (1Z0-082)</strong> – 81.9%</li>
-          <li><strong>Java Package Training – Broadway Infosys</strong> (Feb–May 2021)</li>
-        </ul>
-
-        <h3>Internships</h3>
-        <ul>
-          <li><strong>Web Developer – Corizo, Noida (Remote)</strong> (Feb–Apr 2023)</li>
-          <li><strong>Oracle DBA Intern – Octacore Solutions</strong> (Oct 2023–Feb 2024)</li>
-        </ul>
-
-        <h3>Oracle DBA – World Distribution Nepal (Full Time) </h3>
-        <p><strong>Feb 2024 – Present</strong></p>
-        <ul>
-          <li>Clients: Nepal Telecom, Nepal Police, Himalayan Bank Ltd, DG_HUB, NITC</li>
-          <li>Maintained RAC, Data Guard, RMAN, GoldenGate, and audit policies</li>
-          <li>Led zero-downtime patching and DR testing efforts</li>
-        </ul>
-
-        <h3>Ncell Infrastructure Migration</h3>
-        <p><strong>Tech Stack:</strong> Linux, PCA, OLVM, Rackware RMM</p>
-        <ul>
-          <li>Migrated 1000+ VMs with minimal downtime</li>
-          <li>Ensured validation, rollback, and best practices post-migration</li>
-        </ul>
+      <div class="skills__data">
+      <div class="skills__titles">
+        <p class="skills__name">
+          Monitored Oracle Data Guard configurations for log transport and apply services to maintain synchronization between primary and standby databases.
+        </p>
       </div>
-    </details>
+    </div>
 
-    <details>
-      <summary>Contact Me</summary>
-      <div class="contact">
-        <p>Email: <a href="mailto:yashraj.bista@wdn.com.np">yashraj.bista@wdn.com.np</a></p>
-        <p>Location: Kathmandu, Nepal</p>
+    <div class="skills__data">
+      <div class="skills__titles">
+        <p class="skills__name">
+          Monitored tablespaces and ASM diskgroups, and proactively extended them when utilization exceeded 80%.
+        </p>
       </div>
-    </details>
-  </main>
+    </div>
 
-  <footer>
-    <p>&copy; 2025 Yash Raj Bista. All rights reserved.</p>
-  </footer>
+    <div class="skills__data">
+      <div class="skills__titles">
+        <p class="skills__name">
+          Troubleshot and resolved database-related issues to ensure smooth operation of critical services.
+        </p>
+      </div>
+    </div>
 
-  <script>
-    const toggleButton = document.getElementById('darkModeToggle');
-    toggleButton.addEventListener('click', () => {
-      document.body.classList.toggle('dark');
-    });
-  </script>
-</body>
+    <div class="skills__data">
+      <div class="skills__titles">
+        <p class="skills__name">
+          Generated monthly database health check reports and contributed to system performance reviews.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--==================== Experience 2 =================-->
+<div class="skills__content skills__close">
+  <div class="skills__header">
+    <img src="assets/img/ncell_logo.png" alt="NCELL Logo"
+         class="skills__icon"
+         style="width: 32px; height: 32px; object-fit: contain; margin-right: 0.75rem;">
+
+    <div>
+      <h1 class="skills__title">NCELL</h1>
+    </div>
+
+    <i class="uil uil-angle-down skills__arrow"></i>
+  </div>
+
+  <div class="skills__list grid">
+    <div class="skills__data">
+      <div class="skills__titles">
+        <p class="skills__name">
+          Supported infrastructure modernization by migrating 1000+ VMs from VMware to Oracle PCA and OLVM.
+        </p>
+      </div>
+    </div>
+
+    <div class="skills__data">
+      <div class="skills__titles">
+        <p class="skills__name">
+          Executed Oracle database migrations using Rackware RMM with zero data loss and minimal downtime.
+        </p>
+      </div>
+    </div>
+
+    <div class="skills__data">
+      <div class="skills__titles">
+        <p class="skills__name">
+          Validated and tuned RAC and standalone databases post-migration to ensure stability and performance.
+        </p>
+      </div>
+    </div>
+
+    <div class="skills__data">
+      <div class="skills__titles">
+        <p class="skills__name">
+          Documented migration SOPs and coordinated cutovers under strict SLAs and change controls.
+        </p>
+      </div>
+    </div>
+
+    <div class="skills__data">
+      <div class="skills__titles">
+        <p class="skills__name">
+          Provided on-call production support and contributed to post-migration reviews.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--==================== Experience 3 =================-->
+<div class="skills__content skills__close">
+  <div class="skills__header">
+    <img src="assets/img/dg_hub.jpg" alt="DG-HUB Logo"
+         class="skills__icon"
+         style="width: 32px; height: 32px; object-fit: contain; margin-right: 0.75rem;">
+
+    <div>
+      <h1 class="skills__title">DG-HUB</h1>
+    </div>
+
+    <i class="uil uil-angle-down skills__arrow"></i>
+  </div>
+
+  <div class="skills__list grid">
+    <div class="skills__data">
+      <div class="skills__titles">
+        <p class="skills__name">
+          Monitored Oracle container databases (CDBs) with multiple pluggable databases (PDBs) to ensure smooth operation and resource optimization.
+        </p>
+      </div>
+    </div>
+
+    <div class="skills__data">
+      <div class="skills__titles">
+        <p class="skills__name">
+          Conducted regular health checks and tracked performance metrics across all environments.
+        </p>
+      </div>
+    </div>
+
+    <div class="skills__data">
+      <div class="skills__titles">
+        <p class="skills__name">
+          Generated and submitted database health reports for system audits and monitoring.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+    <div>
+ 
+      
+      <!--==================== Experience 4 =================-->
+<div class="skills__content skills__close">
+  <div class="skills__header">
+    <img src="assets/img/hbl_logo.jpg" alt="Himalayan Bank Logo"
+         class="skills__icon"
+         style="width: 32px; height: 32px; object-fit: contain; margin-right: 0.75rem;">
+
+    <div>
+      <h1 class="skills__title">Himalayan Bank</h1>
+    </div>
+
+    <i class="uil uil-angle-down skills__arrow"></i>
+  </div>
+
+  <div class="skills__list grid">
+    <div class="skills__data">
+      <div class="skills__titles">
+        <p class="skills__name">
+          Monitored multiple databases hosted on a single server, ensuring high availability and performance.
+        </p>
+      </div>
+    </div>
+
+    <div class="skills__data">
+      <div class="skills__titles">
+        <p class="skills__name">
+          Oversaw Data Guard configurations and ensured synchronization for critical card systems.
+        </p>
+      </div>
+    </div>
+
+    <div class="skills__data">
+      <div class="skills__titles">
+        <p class="skills__name">
+          Generated monthly health reports for all monitored databases to support audit and compliance.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--==================== Experience 5 =================-->
+<div class="skills__content skills__close">
+  <div class="skills__header">
+    <img src="assets/img/nepalpolice_logo.png" alt="Nepal Police Logo"
+         class="skills__icon"
+         style="width: 32px; height: 32px; object-fit: contain; margin-right: 0.75rem;">
+
+    <div>
+      <h1 class="skills__title">Nepal Police</h1>
+    </div>
+
+    <i class="uil uil-angle-down skills__arrow"></i>
+  </div>
+
+  <div class="skills__list grid">
+    <div class="skills__data">
+      <div class="skills__titles">
+        <p class="skills__name">
+          Monitored container database (CDB) environments with multiple pluggable databases (PDBs), including Traffic and NOC databases.
+        </p>
+      </div>
+    </div>
+
+    <div class="skills__data">
+      <div class="skills__titles">
+        <p class="skills__name">
+          Ensured availability and performance of mission-critical systems through regular health checks and performance reviews.
+        </p>
+      </div>
+    </div>
+
+    <div class="skills__data">
+      <div class="skills__titles">
+        <p class="skills__name">
+          Generated monthly health reports to support operational continuity and database maintenance planning.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</section>
+
+      <!--==================== Qualifications ==================-->
+
+      <section
+        class="qualification__section service__section"
+        id="qualification"
+      >
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle">My personal journey</span>
+
+        <div
+          class="qualification__container container grid services__container"
+        >
+          <div class="qualification__tabs">
+            <div
+              class="qualification__button button--flex qualification__active"
+              data-target="#education"
+            >
+              <i class="uil uil-graduation-cap qualification__icon"></i>
+              Education
+            </div>
+          </div>
+
+          <div class="qualification__sections">
+            <!--====== Qualification Content 1 ======-->
+            <div
+              class="qualification__content qualifiation__active services__content"
+              data-content
+              id="education"
+            >
+              <!--====== Qualification 1 ======-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">NEB (11th & 12th)</h3>
+                  <span class="qualification__subtitle"
+                    >United Academy <br />High School</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>
+                    2015 - 2017
+                  </div>
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                
+                  </span>
+                  <div class="services__modal">
+                    <div class="services__modal-content">
+                  
+                    </div>
+                  </div>
+                </div>
+
+                
+              </div>
+
+              <!--====== Qualification 2 ======-->
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+                <div>
+                  <h3 class="qualification__title">Bachelors</h3>
+                  <span class="qualification__subtitle"
+                    >B.Tech in CSE <br />MIT WPU, Pune</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>
+                    2017 - 2021
+                  </div>
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                  
+                  </span>
+                  <div class="services__modal">
+                    <div class="services__modal-content">
+                      <h4 class="services__modal-title">
+                        Class 12th Summary :
+                      </h4>
+                      <i class="uil uil-times services__modal-close"></i>
+                      <ul class="services__modal-services grid">
+                        <li class="services__modal-service">
+                         
+                        </li>
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__moda-icon"
+                          ></i>
+                          
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--====== Qualification 3 ======-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Masters</h3>
+                  <span class="qualification__subtitle"
+                    >Softwarica College of IT and E-Commerce, Kathmandu</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>
+                    2024 - 2025
+                  </div>
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                  
+                  </span>
+                  <div class="services__modal">
+                    <div class="services__modal-content">
+                      <h4 class="services__modal-title">College Summary :</h4>
+                      <i class="uil uil-times services__modal-close"></i>
+                      <ul class="services__modal-services grid">
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__modal-icon"
+                          ></i>
+                          
+                        </li>
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__modal-icon"
+                          ></i>
+                         
+                        </li>
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__modal-icon"
+                          ></i>
+                          
+                        </li>
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__modal-icon"
+                          ></i>
+                          
+                        </li>
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__modal-icon"
+                          ></i>
+                         
+                        </li>
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__modal-icon"
+                          ></i>
+                          
+                        </li>
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__modal-icon"
+                          ></i>
+                          
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <!--<span class="qualification__line"></span>-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=================== Portfolio ===================-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Projects</h2>
+        <span class="section__subtitle">Most recent work</span>
+
+        <div class="portfolio__container container swiper-container">
+          <div class="swiper-wrapper">
+            <!-- ------------------------portfollio 1-------------------- -->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/img/portfolio5.png" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">
+                 VerticalIR: Intelligent Vertical Search & Document Clustering System
+                </h3>
+                <p class="portfolio__description">
+                  VerticalIR is a two-part system that leverages natural language processing and machine learning to enhance academic information retrieval. The project combines a custom-built vertical search engine with a document clustering system to provide fast, topic-aware access to scholarly content.
+
+The vertical search engine uses a Python-based web crawler to scrape, extract, and index research publications from Coventry University's School of Computing. An inverted index structure supports efficient search, and a GUI enables intuitive interaction with search results in real time.
+
+The second component uses TF-IDF, K-Means, and Decision Trees to automatically cluster and classify documents into topics like Politics, Entertainment, and Economics. This includes full preprocessing (tokenization, lemmatization), real-time classification through a GUI, and performance evaluation using precision, recall, and F1-score.
+
+VerticalIR showcases the fusion of web crawling, indexing, unsupervised learning, and user-centric design to deliver intelligent and efficient document discovery and classification.
+                </p>
+                <a
+                  href="https://github.com/yashrajbista/yashrajbistaIR/tree/main/Information_-Retrieval--main"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  GitHub Repository
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+                
+              </div>
+            </div>
+            <!-- ------------------------portfollio 2-------------------- -->
+
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/img/portfolio1.png" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">
+                  Gold Price Forecasting using LSTM Networks
+                </h3>
+                <p class="portfolio__description">
+                  Gold Price Forecasting using LSTM is a deep learning–based time-series prediction project aimed at accurately forecasting future gold prices. The project applies Long Short-Term Memory (LSTM) networks, a type of Recurrent Neural Network (RNN), to capture long-term temporal patterns and complex nonlinear trends in gold market data.
+
+The model is trained on a decade of historical gold price data (2013–2023) including attributes like open, close, high, low prices, trading volume, and daily percentage changes. Data preprocessing steps include normalization, sequence generation using a sliding window approach, and handling of missing values.
+
+The architecture features stacked LSTM layers with dropout for regularization and dense output layers. It is optimized using the Adam algorithm and evaluated through performance metrics such as RMSE, MAE, and R² Score. Visualization tools are used to compare predicted and actual prices, showcasing the model’s accuracy and trend alignment.
+
+This project highlights the superiority of LSTM over traditional models (like ARIMA and SVM) in modeling volatile financial data. Future improvements include integrating macroeconomic indicators and exploring Transformer-based architectures for even greater forecasting accuracy.
+                </p>
+                <a
+                  href="https://github.com/yashrajbista/ANN_project/tree/main/ann%20project/240224-main"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  GitHub Repository
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+                
+              </div>
+            </div>
+
+           
+
+          <!-- add arrows -->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+          <!-- add pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!--===================== Contact Me =====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch</span>
+
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-calling contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Contact Me</h3>
+                <span class="contact__subtitle"
+                  ><a href="tel:9860927901"></a>9860927901</span
+                >
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-envelope-minus contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <span class="contact__subtitle"
+                  >yashraj.bista@wdn.com.np</span
+                >
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Location</h3>
+                <span class="contact__subtitle"
+                  >Kathmandu, Nepal</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <form action="" class="contact__form grid">
+            <div class="contact__inputs grid">
+              <div class="contact__content">
+                <label for="" class="content__label">Name</label>
+                <input type="text" class="contact__input" />
+              </div>
+
+              <div class="contact__content">
+                <label for="" class="content__label">Email</label>
+                <input type="Email" class="contact__input" />
+              </div>
+            </div>
+
+            <div class="contact__content">
+              <label for="" class="content__label">Message</label>
+              <textarea
+                name=""
+                id=""
+                cols="0"
+                rows="7"
+                class="contact__input"
+              ></textarea>
+            </div>
+
+            <div>
+              <a
+                href=" mailto: yashraj.bista@wdn.com.np?subject=Testing out mailto! &body=This is only a test!"
+                class="button button--flex"
+              >
+                Send Message
+                <i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--================== Footer ===============-->
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Yash Raj Bista</h1>
+            <span class="footer__subtitle"
+              >Oracle Database Administrator</span
+            >
+          </div>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#qualification" class="footer__link">Qualification</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="footer__link">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contact" class="footer__link">Contact-Me</a>
+            </li>
+          </ul>
+
+          <div class="footer__socials">
+            <a
+              href="https://www.instagram.com/alpesh.jpeg/"
+              class="footer__social"
+              target="__blank"
+            >
+            <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <p class="footer__copy">&#169; Yash Raj Bista. All right reserved</p>
+      </div>
+    </footer>
+
+    <!--================== SCROLL TOP ==================-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <script type="text/javascript" src="assets/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>
+    <script src="assets/ptj.js"></script>
+  </body>
 </html>
